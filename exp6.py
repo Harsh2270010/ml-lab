@@ -38,3 +38,20 @@ print(q1)
 print('\n2. Probability of Heart Disease given evidence= cp:')
 q2 = HeartDiseasetest_infer.query(variables=['target'], evidence={'cp': 2})
 print(q2) 
+# import seaborn as sns
+# import matplotlib.pyplot as plt
+
+# # Calculate the correlation matrix
+# correlation_matrix = heartDisease.corr()
+
+# # Set up the matplotlib figure
+# plt.figure(figsize=(10, 8))
+
+# # Draw the heatmap with the mask and correct aspect ratio
+# sns.heatmap(correlation_matrix, annot=True, fmt=".2f", cmap='coolwarm', square=True, cbar_kws={"shrink": .8})
+
+# # Set the title
+# plt.title('Heatmap of Feature Correlations')
+
+# # Show the plot
+# plt.show()
